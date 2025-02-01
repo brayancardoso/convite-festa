@@ -1,0 +1,282 @@
+/* Definições globais */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+    background-color: #f9f9f9; /* Define uma cor de fundo clara */
+    color: #333; /* Define a cor padrão do texto */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: white; /* Cor de fundo rosa para o cabeçalho */
+    color: #fff; /* Texto branco */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+}
+
+header a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: inherit; /* Herda a cor do pai (branco) */
+}
+
+/* Estilo do menu de navegação */
+#menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove padding da lista */
+    margin: 0; /* Remove margens da lista */
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content:center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+#menu a {
+    color: black; /* Cor do texto dos links do menu */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    border-radius: 20px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Adiciona transição suave para o hover */
+}
+
+#menu a:hover {
+    background-color:  rgb(41, 117, 41); /* Cor de fundo ao passar o mouse */
+}
+
+/* Contador-tempo */
+/* Contagem regressiva */
+.contador {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.countdown-el , text{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Destaque claro */
+    background-color : darkgreen;
+    border-radius: 30px;
+    width: 150px;
+
+}
+
+span {
+    display: block;
+    font-size: 0.9rem;
+    color: #ffffff; /* Texto em tom mais claro */
+}
+
+
+
+
+.confirme{
+    padding: 30px; /* Espaçamento interno */
+    margin: 10px auto; /* Margem automática para centralizar */
+    width: 80%; /* Limita a largura a 80% da página */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 30px; /* Espaço entre a imagem e a seção confirme*/
+
+
+}
+
+/* Estilo dos formulários */
+form {
+    background-color:rgb(235, 235, 235); /* Fundo cinza-claro */
+    padding: 10px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem automática para centralizar */
+    width: 80%; /* Largura máxima de 80% */
+    max-width: 600px; /* Largura máxima fixa */
+    border-radius: 18px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 100px; /* Espaço entre o rótulo e o campo */
+}
+
+form label {
+    font-weight: bold; /* Negrito para os rótulos */
+    display: block; /* Cada rótulo ocupa uma linha */
+    margin-bottom: 5px; /* Espaço entre o rótulo e o campo */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea{
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
+    padding: 10px; /* Espaçamento interno dos campos */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui o padding no tamanho total do campo */
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o campo e o texto */
+}
+
+form input[type="submit"],
+form button {
+    background-color: #ff69b4; /* Cor de fundo rosa */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de "mão" ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave no hover */
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #da86b0; /* Cor de fundo ao passar o mouse */
+}
+.formulario-2{
+background-color: lightgray;
+border-radius: 30px;/* bordas arredondadas */
+}
+
+.Recado{
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px auto; /* Margem automática para centralizar */
+    width: 80%; /* Limita a largura a 80% da página */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 5px; /* Espaço entre a imagem e a seção recado*/
+}
+
+.item-recados{
+    background-color: #f2f2f2; /* Define a cor de fundo como um cinza claro */
+    box-shadow:  1px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave, criando um efeito de elevação */
+    border-radius: 15px; /* Arredonda as bordas em 5px */
+    padding: 20px 45px; /* Define um espaçamento interno (padding) de 20px verticalmente e 45px horizontalmente */
+    cursor: pointer; /* Altera o cursor para indicar que o item é clicável */
+    position: relative; /* Define o posicionamento relativo para permitir ajustes ou posicionamento de elementos filhos */
+    margin-top: 30px; /* Adiciona um espaço de 30px acima do elemento */
+    list-style: none; /* Remove os marcadores de lista padrão, ideal para estilizar itens de lista personalizados */
+}
+
+.item-recados button {
+    background-color: transparent; /* Remove a cor de fundo do botão */
+    border: none; /* Remove a borda padrão do botão */
+    color: gray; /* Define a cor do texto como cinza */
+    font-size: 10px; /* Define um tamanho de fonte pequeno */
+    padding: 2px; /* Adiciona um pequeno espaçamento interno */
+    margin-left: 5px; /* Adiciona um pequeno espaço à esquerda do botão */
+    cursor: pointer; /* Indica que o botão é clicável */
+}
+
+.item-recados button:hover {
+    color: rgb(14, 14, 14); /* Altera a cor do texto para um tom mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 40px; /* Espaçamento do rodapé em relação ao conteúdo acima */
+    border-radius: 20px;/* Estilo de borda rodapé */
+}
+
+footer ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding da lista */
+    margin: 10px 0; /* Espaçamento superior e inferior */
+    display: flex; /* Exibe os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+footer ul li a {
+    color: #fff; /* Cor branca para os links */
+    font-size: 1.5em; /* Aumenta o tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s; /* Adiciona transição ao hover */
+}
+
+footer ul li a:hover {
+    color: #ff69b4; /* Cor rosa ao passar o mouse */
+}
+
+footer p {
+    margin: 10px 0 0; /* Margem superior para espaçamento */
+    font-size: 0.9em; /* Texto menor */
+}
+
+/* Ajustes de responsividade */
+
+/* --- Botão hambúrguer (inicialmente oculto) --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* --- Outras regras existentes (contador, imagens, formulários etc.) --- */
+/* ... [Seu CSS atual para .contador, img, .sobre, form, footer, etc.] ... */
+
+/* --- Responsividade para telas menores --- */
+@media (max-width: 768px) {
+    /* Ajuste na fonte e espaçamentos se necessário */
+    body {
+        font-size: 14px;
+    }
+
+    /* Exibe o botão hambúrguer */
+    .hamburger {
+        display: block;
+    }
+
+    /* Oculta o menu padrão e exibe-o apenas quando ativado */
+    #menu ul {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 70px; /* Altura do header + algum espaçamento */
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        display: none; /* Oculto por padrão */
+    }
+    
+    /* Quando o menu receber a classe .active, exibe-o */
+    #menu ul.active {
+        display: flex;
+    }
+    
+    /* Centraliza os itens do menu */
+    #menu ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    /* Ajusta o container do header para melhor responsividade */
+    .container-header {
+        flex-wrap: wrap;
+    }
+}
+
+/* --- Responsividade para telas muito pequenas (até 480px) --- */
+@media (max-width: 480px) {
+    /* Ajustes adicionais se necessário */
+    #menu a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    
+    /* Ajuste no header se precisar de menos padding */
+    header {
+        padding: 15px;
+    }
+}

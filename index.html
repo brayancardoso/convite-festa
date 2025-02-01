@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-b"> <!-- Define o tipo de documento como HTML5 e a linguagem do conteúdo como inglês -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo para dispositivos móveis -->
+    <title>Festa 15 years</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="global.css"> <!-- Link para o arquivo de estilos CSS -->
+    <script src="script.js" defer></script>
+    <script src="recados.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="container-header">
+          <!-- Logo ou título do site -->
+          <div class="logo">
+            <a href="index.html"><h1>Festa 15 years</h1></a>
+          </div>
+          <!-- Botão hambúrguer: exibido apenas em telas pequenas -->
+          <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- Menu de navegação -->
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#formulario-1">Confirme sua presença</a></li>
+              <li><a href="#formulario-2">Mensagens</a></li>
+            </ul>
+          </nav>
+        </div>      
+    </header>
+
+    
+    <div class="contador"><!--contador-tempo-->
+    <h1>Contagem regressiva</h1>
+     <div class="countdown-el days-c">
+        <p class="text" id="days">0</p>
+        <span>Dias</span>
+     </div>
+     <div class="countdown-el hours-c">
+        <p class="text" id="hours">0</p>
+        <span>Horas</span>
+     </div>
+     <div class="countdown-el mins-c">
+        <p class="text" id="mins">0</p>
+        <span>Minutos</span>
+     </div>
+     <div class="countdown-el seconds-c">
+        <p class="text" id="seconds">0</p>
+        <span>Segundos</span>
+     </div>
+    </div>
+    <!-- Conteúdo principal -->
+    <main>
+      
+        <!-- Formulário 1: Confirmação de presença -->
+        <div id="formulario-1" class="formulario-1">
+            <section class="confirme"> <!-- Confirmação de presença -->
+                <h2>Confirmar Presença</h2> <!-- Subtítulo da seção -->
+            </section>
+
+            <!-- O campo oculto _next redireciona para a página de agradecimento -->
+            <form action="https://formsubmit.co/brayanccardoso41@gmail.com" method="POST">
+                <!-- O campo oculto _next redireciona para a página de agradecimento -->
+                <!-- Se estiver testando localmente, lembre-se: alguns serviços podem não aceitar redirecionamentos para localhost -->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigada.html">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome" placeholder="Digite seu Nome aqui" required>
+            
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email aqui" required>
+            
+                <label for="numero">Número:</label>
+                <input id="numero" type="tel" name="numero" placeholder="Digite seu Número aqui" required>
+            
+                <p>Você irá no evento?</p>
+                <div class="radio-group">
+                  <input type="radio" id="yes" name="confirmacao" value="Sim" required>
+                  <label for="yes">Sim</label>
+                  <input type="radio" id="no" name="confirmacao" value="Não">
+                  <label for="no">Não</label>
+                </div>
+            
+                <label for="observacoes">Observações:</label>
+                <input id="observacoes" type="text" name="observacoes" placeholder="Digite suas observações aqui">
+            
+                <button type="submit">Confirmar Presença</button>
+              </form>
+            
+        </div>
+
+     
+       
+
+        <!-- Formulário 2: Envio de recados -->
+        <div  id="formulario-2" class="formulario-2">
+            <section class="Recado">
+               <!--Recados -->
+                <h2>Deixe sua Mensagem</h2> <!-- Subtítulo da seção -->
+            </section>
+            <form id="mensagem-form">
+                <label>Nome:</label>
+                <input id="nome" type="text" placeholder="Digite seu Nome aqui" required>
+                <br><br>
+                
+                <h2>Mensagem</h2>
+                <textarea id="palavras" placeholder="Deixe sua mensagem aqui"></textarea> <!-- Campo de texto para recados -->
+                <button id="botao" type="submit">Enviar mensagem</button> <!-- Botão para envio do recado -->
+                 <!-- Seção "Sobre a Festa" -->
+
+
+                  <ul id="item-recados">
+
+                 
+
+                  </ul>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Nos acompanhe  nas redes sociais:</p> <!-- Texto introdutório para as redes sociais -->
+        <ul> <!-- Lista de links para redes sociais -->
+            <li><a href="#"><i class="fa-solid fa-envelope fa-bounce"></i></a></li> <!-- Link para email -->
+            <li><a href="https://wa.me/62995466150" target="_blank"><i class="fa-brands fa-whatsapp fa-bounce"></i></a></li> <!-- Link para WhatsApp -->
+            <li><a href="https://www.instagram.com/brayangch_/" target="_blank"><i class="fa-brands fa-instagram fa-bounce"></i></a></li> <!-- Link para Instagram -->
+        </ul>
+        <p>Desenvolvido por Brayancardoso<span class="nodr"></span><span class="point">.</span></p> <!-- Crédito ao desenvolvedor -->
+    </footer>
+</body>
+</html>
